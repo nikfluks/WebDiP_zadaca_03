@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Proizvod</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="naslov" content="Proizvod">
+        <meta name="kljucne_rijeci" content="FOI,Web DiP">
+        <meta name="datum_izrade" content="07.03.2017.">  
+        <meta name="autor" content="Nikola Fluks"> 
+        <link rel="stylesheet" media="screen" type="text/css" href="css/nikfluks.css">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/nikfluks_jquery.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Proizvod</h1>
+            <figure id="logoSlika">
+                <img src="slike/logo.png" usemap="#mapa1" alt="FOI" width="400" height="200">
+                <map name="mapa1">
+                    <area href="index.html" alt="logo" shape="rect" coords="0,0,200,200" target="index" />
+                    <area href="#proizv" alt="logo" shape="rect" coords="200,0,400,200" />
+                </map>
+                <figcaption id="logoCap">Interaktivna slika</figcaption>
+            </figure>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html"> Početna stranica</a></li>
+                <li><a href="proizvod.html"> Proizvod</a></li>
+                <li><a href="registracija.html"> Registracija</a></li>
+                <li><a href="prijava.html"> Prijava</a></li>
+                <li><a href="novi_proizvod.html"> Novi proizvod</a></li>
+                <li><a href="popis_proizvoda.html"> Popis proizvoda</a></li>
+                <li><a href="era.html"> ERA</a></li>
+                <li><a href="navigacijski.html"> Navigacijski</a></li>
+            </ul> 
+        </nav>
+
+        <section id="proizv" class="proizvod">
+            <h2>Acer Aspire</h2> 
+            <dl>
+                <dt class="ime">Naziv proizvoda</dt>
+                <dd class="vrijednost">Acer Aspire</dd>
+                <dt class="ime">Opis proizvoda</dt>
+                <dd class="vrijednost">Prijenosno računalo ACER Aspire E5-774G-55LD NX.GEDEX.049 / Core i5 7200U, DVDRW, 8GB, 1000GB, GeForce GTX 950MX, 17.3" LED FHD, HDMI, LAN, USB 3.1-C, Linux, crni</dd>
+                <dt class="ime">Datum proizvodnje</dt>
+                <dd class="vrijednost">20.1.2017.</dd>
+                <dt class="ime">Vrijeme proizvodnje</dt>
+                <dd class="vrijednost">08:00h</dd>
+                <dt class="ime">Količina proizvoda</dt>
+                <dd class="vrijednost">1 000 000</dd>
+                <dt class="ime">Težina proizvoda</dt>
+                <dd class="vrijednost">2,5kg</dd>
+                <dt class="ime">Kategorija proizvoda</dt>
+                <dd class="vrijednost">Tehnika</dd>
+            </dl>
+        </section>
+
+        <section class="slika_na_sliki">
+            <figure id="acer1">
+                <img src="slike/acer.png" alt="acer1" width="400" height="200">
+                <figcaption >Acer Aspire 1</figcaption>
+            </figure>
+            <figure id="acer2">
+                <img src="slike/acer2.jpg" alt="acer2" width="400" height="200">
+                <figcaption>Acer Aspire 2</figcaption>
+            </figure>
+            <figure id="acer3">
+                <img src="slike/acer3.jpg" alt="acer3" width="400" height="200">
+                <figcaption>Acer Aspire 3</figcaption>
+            </figure>
+        </section>
+        <div id="aceri"></div>
+
+        <footer>
+            <p>Vrijeme potrebno za rješavanje aktivnog dokumenta: 1h </p>
+            <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2016%2Fzadaca_03%2Fnikfluks%2Fproizvod.html" target="html5">
+                <figure id="html5">
+                    <img src="slike/HTML5.png" alt="HTML5" width="100" height="100">
+                    <figcaption>HTML5 validator</figcaption>
+                </figure>
+            </a>
+            <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2016%2Fzadaca_03%2Fnikfluks%2Fcss%2Fnikfluks.css&amp;profile=css3&amp;usermedium=all&amp;warning=1&amp;vextwarning=&amp;lang=en" target="css3">
+                <figure id="css3">
+                    <img src="slike/CSS3.png" alt="CSS3" width="100" height="100">
+                    <figcaption>CSS3 validator</figcaption>
+                </figure> 
+            </a>
+            <address id="mail"><strong>Kontakt: <a href="mailto:nikfluks@foi.hr">Nikola Fluks</a></strong></address>
+            <p><small>&copy; 2017. N. Fluks </small></p>
+        </footer>
+    </body>
+</html>

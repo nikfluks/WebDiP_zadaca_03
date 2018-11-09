@@ -1,0 +1,606 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 7, 2017, 5:31:54 PM
+    Author     : grupa_4
+*/
+
+#aceri{
+    margin-top: 40px;
+    margin-left: 200px;
+    background-color: magenta;
+    color: white;
+    width: 280px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 25px;
+    height: 40px;
+}
+
+#pozivniBrojB{
+    margin-left: 155px;
+}
+
+.poljeSGreskom{
+    background-color: red;
+    color: white;
+}
+
+.poljeSGreskom::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+.greske_reg{
+    background: red;
+    color: white;
+    margin-right: 10px;
+}
+
+
+.greska_novi_proizv {
+    background: red;
+    color: white;
+    margin-right: 10px;
+}
+
+.greska_novi_proizv > button{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 220px;
+    font-size: 20px;
+}
+
+/*responzivni - pocetak*/
+@media screen and (max-width: 480px){
+    body {
+        font-family: "arial";
+        font-size: 8px;
+        background-color: darkcyan;
+        line-height: 20px;
+    }
+    #profil{
+        display: none;
+        visibility: hidden;
+    }
+    #posaljiPrijavu{
+        margin-left: 180px;
+    }
+    dt.ime{
+        font-size: 12px; 
+    }
+    dd.vrijednost{
+        font-size: 12px;
+    }
+    #kategorijaProizvoda2, #kategorijaProizvoda3{
+        margin-left: 226px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 480px){
+    body {
+        font-family: "times-new-roman";
+        font-size: 14px;
+        background-color: darkslategray;
+        line-height: 25px;
+    }
+    #posaljiPrijavu{
+        margin-left: 155px;
+    }
+    #kategorijaProizvoda2, #kategorijaProizvoda3{
+        margin-left: 228px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    body {
+        font-family: "courier";
+        font-size: 16px;
+        background-color: darkslateblue;
+    }
+    #posaljiPrijavu{
+        margin-left: 110px;
+    }
+    dt.ime{
+        width: 220px; 
+    }
+    dd.vrijednost{
+        margin-left: 225px;
+        padding-bottom: 15px;
+    }
+    #kategorijaProizvoda2, #kategorijaProizvoda3{
+        margin-left: 234px;
+    }
+}
+/*responzivni - kraj*/
+
+/*opcenito - pocetak*/
+h1 {
+    color: red;
+    font-style: italic;
+    padding-left: 40px;
+}
+
+h2{
+    color: black;
+}
+
+#logoSlika{
+    margin-top: 30px;
+    background-color: white;
+    width: 400px;
+    height: 200px;
+}
+
+#logoCap{
+    padding-top: 5px;
+    text-align: center;
+    font-style: italic;
+}
+
+figcaption{
+    color: white;
+}
+
+
+nav {
+    margin-top: 70px;
+    width: 250px;
+}
+
+nav > ul {
+    list-style: none;
+}
+
+nav > ul li a {
+    text-transform: uppercase;
+    color: #e4433c;
+    background-color: #eaeaea;
+    border-top-style: double;
+    display: block;
+    border-color: black;
+    padding: 10px 20px;
+}
+
+nav > ul li:first-child a {
+    border-top-style: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+}
+
+nav > ul li:last-child a {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 20px;
+}
+
+nav > ul li a:hover {
+    color: white;
+    background-color: #f23f37;
+}
+
+footer {
+    padding-top: 20px;
+    clear: both;
+}
+
+footer p,address{
+    padding-left: 40px;
+}
+
+#html5{
+    float: left;
+}
+
+#css3{
+    float: left;
+}
+
+#mail{
+    padding-top: 10px;
+    clear: both;
+}
+/*opcenito - kraj*/
+
+/*pocetna - pocetak*/
+#heding2_podaci{
+    background-color: darkseagreen;
+    width: 180px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: "courier";
+}
+
+#heding2_proizvodi{
+    background-color: darkseagreen;
+    width: 380px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: "courier";
+}
+
+.osobni_podaci{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+#podaci {
+    list-style: none;
+    background-color: greenyellow;
+    color: black;
+    line-height: 30px;
+    padding: 15px 25px;
+    float: left;
+    border-radius: 10px;
+}
+
+#profil {
+    float: left;
+}
+
+.omiljeni_proizvodi{
+    clear: both;
+    color: white;
+    padding-left: 40px;
+}
+
+.slike_omiljenih_proizvoda{
+    max-height: 30%;
+    max-width: 30%;
+    box-shadow: 10px 10px tomato;
+    margin-top: 10px;
+}
+
+.sjena{
+    padding-top: 10px;
+}
+/*pocetna - kraj*/
+
+/*registracija - pocetak*/
+.registracija{
+    margin-top: 40px;
+    margin-left: 40px;
+    color: black;
+    background-color: darkseagreen;
+    width: 450px;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+/*obrasci*/
+form{
+    line-height: 45px;
+    position: relative;
+    left: 0%
+}
+
+input {
+    height: 25px;
+}
+
+label{
+    display: inline-block;
+    text-align: right;
+    width: 150px;
+}
+/*obrasci*/
+
+#posaljiReg{
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-left: 250px;
+    height: 30px;  
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#posaljiReg:hover{
+    color: red;
+    cursor: pointer;
+}
+/*registracija - kraj*/
+
+/*prijava - pocetak*/
+.prijava {
+    margin-top: 40px;
+    margin-left: 40px;
+    color: black;
+    background-color: darkseagreen;
+    width: 350px;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+/*prijava*/
+#korImeL{
+    display: inline-block;
+    text-align: right;
+    width: 150px;
+}
+
+#korImePrijava{
+    height: 25px;
+}
+
+#lozinkaL{
+    display: inline-block;
+    text-align: right;
+    width: 150px;
+}
+
+#lozPrijava{
+    height: 25px;
+}
+
+#zapamtiMeL{
+    display: inline-block;
+    text-align: right;
+    width: 150px;
+}
+
+#zapamtiMeLBrisi{
+    display: none;
+}
+
+#zapamtiMeDa{
+    margin-left: 10px;
+}
+
+#zapamtiMeNe{
+    margin-left: 10px;  
+}
+
+#posaljiPrijavu{
+    text-transform: uppercase;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    height: 25px; 
+}
+
+#posaljiPrijavu:hover{
+    color: red;
+    cursor: pointer;
+}
+
+#neReg{
+    color: royalblue;
+}
+/*prijava*/
+
+/*novi proizvod - pocetak*/
+.dodavanje_novog_proizvoda{
+    margin-top: 40px;
+    margin-left: 40px;
+    color: black;
+    background-color: darkseagreen;
+    width: 700px;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+.dodavanje_proizvodaL{
+    width: 220px;
+}
+
+#opisProizvoda{
+    width: 400px;
+    height: 300px;
+}
+
+.dodavanje_proizvodaI{
+    width: 200px;
+}
+
+.dodavanje_proizvodaLBrisi{
+    display: none;
+}
+
+.kategorijaProizvoda{
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    transform: scale(1.2);
+}
+
+#spremiProizvod{
+    text-transform: uppercase;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    height: 25px; 
+    margin-left: 230px;
+}
+
+#spremiProizvod:hover{
+    color: red;
+    cursor: pointer;
+}
+
+#reset1{
+    text-transform: uppercase;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    height: 25px; 
+}
+
+#reset1:hover{
+    color: red;
+    cursor: pointer;
+}
+/*novi proizvod - kraj*/
+
+/*popis proizvoda - pocetak*/
+.popis_proizvoda{
+    margin-top: 40px;
+    margin-left: 40px;
+    color: black;
+    background-color: darkseagreen;
+    padding-top: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    overflow-x: hidden;
+}
+
+.tablica_popis_proizvoda a
+{
+    color: royalblue;
+}
+
+table, td, th { 
+    border: 1px solid black;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th{
+    padding: 10px;
+}
+
+th{
+    background-color: #4CAF50;
+    color: white;
+    height: 50px;
+}
+
+tr:hover {
+    background-color: yellowgreen;
+}
+
+caption.tablica_popis_proizvoda{
+    background-color: navajowhite;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+/*popis proizvoda - kraj*/
+
+/*proizvod - pocetak*/
+.proizvod{
+    margin-top: 40px;
+    margin-left: 40px;
+    color: black;
+    background-color: darkseagreen;
+    width: 70%;
+    height: 60%;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+dl {
+    border: 5px outset #ccc;
+    padding: 10px;
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+dt {
+    float: left;
+    clear: left;
+    width: 150px;
+    text-align: right;
+    font-weight: bold;
+    color: green;
+}
+
+dt::after {
+    content: ":";
+}
+
+dd {
+    margin-left: 155px;
+    padding-bottom: 5px;
+}
+
+.slika_na_sliki{
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 560px;
+    height: 360px;
+    background-color: grey;
+    border-radius: 10px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+/*
+img:hover{
+    z-index: 2;     
+}*/
+
+.slika_na_sliki > figure > figcaption{
+    text-align: center;
+    color: chartreuse;
+    font-size: 18px;
+}
+
+#acer1,#acer2,#acer3{
+    position: relative;
+    width: 400px;
+    height: 200px;
+}
+
+#acer1{
+    top: 10px;
+    left: 0px;
+}
+
+#acer2{
+    top: -160px;
+    left: 40px;
+}
+
+#acer3{
+    top: -310px;
+    left: 80px;
+}
+/*proizvod - kraj*/
+
+/*era - pocetak*/
+.era_model{
+    margin-top: 40px;
+    margin-left: 40px;
+    color: black;
+    background-color: darkseagreen;
+    width: 300px;
+    height: 300px;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+/*era - kraj*/
+
+/*navigacijski - pocetak*/
+.navig{
+    margin-top: 40px;
+    margin-left: 40px;
+    color: black;
+    background-color: darkseagreen;
+    width: 400px;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+/*navigacijski - kraj*/

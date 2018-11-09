@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Registracija</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="naslov" content="Registracija">
+        <meta name="kljucne_rijeci" content="FOI,Web DiP">
+        <meta name="datum_izrade" content="07.03.2017.">  
+        <meta name="autor" content="Nikola Fluks">
+        <link rel="stylesheet" media="screen" type="text/css" href="css/nikfluks.css">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/nikfluks_jquery.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1 id="status">Registracija</h1>
+            <figure id="logoSlika">
+                <img src="slike/logo.png" usemap="#mapa1" alt="FOI" width="400" height="200">
+                <map name="mapa1">
+                    <area href="index.html" alt="logo" shape="rect" coords="0,0,200,200" target="index"/>
+                    <area href="#registracija_nav" alt="logo" shape="rect" coords="200,0,400,200" />
+                </map>
+                <figcaption id="logoCap">Interaktivna slika</figcaption>
+            </figure>
+        </header>
+
+        <nav id="registracija_nav">
+            <ul>
+                <li><a href="index.html"> Početna stranica</a></li>
+                <li><a href="proizvod.html"> Proizvod</a></li>
+                <li><a href="registracija.html"> Registracija</a></li>
+                <li><a href="prijava.html"> Prijava</a></li>
+                <li><a href="novi_proizvod.html"> Novi proizvod</a></li>
+                <li><a href="popis_proizvoda.html"> Popis proizvoda</a></li>
+                <li><a href="era.html"> ERA</a></li>
+                <li><a href="navigacijski.html"> Navigacijski</a></li>
+            </ul> 
+        </nav>
+
+        <section class="registracija">
+            <h2>Registracija</h2>
+            <div id="greske_reg"></div>
+            <form method="POST" name="registracija" id="reg_form" novalidate
+                  action="http://barka.foi.hr/WebDiP/2016/materijali/zadace/ispis_forme.php">
+                <label for="ime">Ime:</label>
+                <input type="text" id="ime" name="ime" size="30" placeholder="Pero" autofocus="autofocus"><br>
+                <label for="prezime">Prezime:</label>
+                <input type="text" id="prezime" name="prezime" size="30" placeholder="Kos"><br>
+                <label for="korIme">Korisničko ime:</label>
+                <input type="text" id="korIme" name="korIme" size="30" placeholder="pkos" required="required"><br>
+                <!--
+                <label for="grad">Grad:</label>
+                <input type="text" id="grad" name="grad" size="30" placeholder="Grad"><br>
+                -->
+                <label for="drzava">Drzava:</label>
+                <input type="text" id="drzava" name="drzava" size="30" placeholder="Drzava"><br>
+
+                <label for="pozivniBrojI">Pozivni broj:</label>
+                <input type="text" id="pozivniBrojI" name="pozivniBroj" size="30" placeholder="Pozivni broj"><br>
+                <input type="button" id="pozivniBrojB" name="pozivniBroj" size="30" value="Učitaj pozivne brojeve"><br>
+
+                <label for="email">E-mail adresa:</label>
+                <input type="email" id="email" name="email" size="30" placeholder="ime.prezime@posluzitelj.xxx" required="required"><br>
+                <label for="lozinka">Lozinka:</label>
+                <input type="password" id="lozinka" name="lozinka" size="30" placeholder="Lozinka" required="required"><br>
+                <label for="lozinka2">Ponovi lozinku:</label>
+                <input type="password" id="lozinka2" name="lozinka2" size="30" placeholder="Ponovi lozinku" required="required"><br>
+                <input type="submit" id="posaljiReg" name="posaljiReg" value="Registracija"> 
+            </form>
+        </section>
+
+        <footer>
+            <p>Vrijeme potrebno za rješavanje aktivnog dokumenta: 4h </p>
+            <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2016%2Fzadaca_03%2Fnikfluks%2Fregistracija.html" target="html5">
+                <figure id="html5">
+                    <img src="slike/HTML5.png" alt="HTML5" width="100" height="100">
+                    <figcaption>HTML5 validator</figcaption>
+                </figure>
+            </a>
+            <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2016%2Fzadaca_03%2Fnikfluks%2Fcss%2Fnikfluks.css&amp;profile=css3&amp;usermedium=all&amp;warning=1&amp;vextwarning=&amp;lang=en" target="css3">
+                <figure id="css3">
+                    <img src="slike/CSS3.png" alt="CSS3" width="100" height="100">
+                    <figcaption>CSS3 validator</figcaption>
+                </figure> 
+            </a>
+            <address id="mail"><strong>Kontakt: <a href="mailto:nikfluks@foi.hr">Nikola Fluks</a></strong></address>
+            <p><small>&copy; 2017. N. Fluks </small></p>
+        </footer>
+    </body>
+</html>
